@@ -49,6 +49,12 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Portfolio'
+	});
+});
+
 app.get('/contact-us', (req, res) => {
 	res.send('Contact Us Page');
 });
